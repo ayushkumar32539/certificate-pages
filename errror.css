@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Khula', sans-serif;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("./download1.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.container {
+  margin-top: 2rem;
+  height: 72vh;
+  width: 55vw;
+  background-size: contain;
+  background: url("./illustration.svg");
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+
+}
+
+.heading {
+  font-size: 4rem;
+  color: #4c2ace;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.head {
+  width: 60vw;
+  display: block;
+  margin: auto;
+  margin-left: 18rem;
+}
