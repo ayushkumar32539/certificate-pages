@@ -66,4 +66,25 @@ height:80vh;
 margin-left: 3rem;
 margin-top: 7rem;
   }
- 
+  @media  screen and (max-width:430px) {
+    .main_container{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .body{
+    background: url('./mobile-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    }
+    
+    html{
+      font-size: 10px;
+    }
+    .form{
+      width: 30%;
+    }
+    .main_container{
+      /* height: 0; */
+    }
+  }

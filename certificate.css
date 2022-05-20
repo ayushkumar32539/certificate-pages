@@ -11,9 +11,8 @@
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
-  /* background-size: calc(100% - 100px); */
   background-size: 100% 100%;
-  /* background-position: center center; */
+  /* border: 5px solid blue; */
  
 }
 .illustration{
@@ -22,15 +21,15 @@
   width: 30%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border:1px solid red;
+  /* border:1px solid red; */
   margin-top: 8rem;
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 .main_container{
 display: flex;
 justify-content: space-between;
 height:80vh;
-border:1px solid red;
+/* border:1px solid red; */
 
 }
 
@@ -38,12 +37,12 @@ border:1px solid red;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  border:1px solid red;
+  /* border:1px solid red; */
   width:40%;
   margin-left: 2rem;
 
 }
- span{
+.tag-text{
     font-size: 3rem;
     color:#7870FF;
     font-weight: 600;
@@ -52,7 +51,7 @@ border:1px solid red;
 
   .tags{
     margin-top:1rem ;
-    border:1px solid red;
+    /* border:1px solid red; */
     display: flex;
     justify-content: space-around;
   }
@@ -64,7 +63,7 @@ border:1px solid red;
 margin-left: 1rem;
   }
   .input{
-    border:1px solid red;
+    /* border:1px solid red; */
 height: 50%;
     display: flex;
     flex-direction: column;
@@ -96,18 +95,64 @@ border-radius: 0.4rem;
     .main_container{
       flex-direction: column-reverse;
       align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* margin-bottom:3rem ; */
+
     }
     .body{
-      background: url();
-    }
+      background: url('./mobile-bg.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
     
     html{
       font-size: 10px;
     }
     .form{
-      width: 30%;
+      width: 80%;
+      height: 50%;
+      margin:0;
+
     }
-    .main_container{
-      /* height: 0; */
+    .input{
+      width: 55%;
+      height: 60%;
+      margin-left: 7rem;
+    }
+    .illustration{
+      margin:0;
+      height: 40%;
+      width: 70%;
+      margin-bottom: 2rem;
+    }
+    .text{
+      text-align: center;
+    }
+   
+    .tags{
+      margin:0;
+    }
+    
+    button{
+      margin-left:2rem ;
+    }
+    input{
+      height: 4rem;
+      font-size: large;
+    }
+
+  }
+  @media screen and (max-width:353px){
+    html{
+      font-size: 8px;
+    }
+  }
+  @media screen and (max-width:286px){
+    html{
+      font-size: 7px;
+    }
+    .form{
+      width: 80%;
     }
   }
