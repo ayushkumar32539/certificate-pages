@@ -8,7 +8,7 @@
 
 .body{
   background-image: url('./PAGE\ 1.svg');
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-repeat: no-repeat;
   /* background-size: calc(100% - 100px); */
@@ -17,14 +17,15 @@
  
 }
 .illustration{
-  background-image: url('./error.svg');
-  height: 80vh;
-  width: 60%;
+  background-image: url('./4503795\ 1\ \(3\).svg');
+  height: 90%;
+  width: 50%;
+  /* background-size: 90% 90%; */
   background-size: 100% 100%;
-  /* background-size: contain; */
+  /* background-size: cover; */
     background-repeat: no-repeat;
   /* border:1px solid red; */
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin-right: 3rem;
 }
 .main_container{
@@ -65,26 +66,75 @@ height:80vh;
     font-weight: 600;
 margin-left: 3rem;
 margin-top: 7rem;
+/* border:1px solid red; */
+
+
   }
-  @media  screen and (max-width:430px) {
+  @media  (max-width:941px) {
+    html{
+      font-size: 13px;
+    }
+  }
+  @media  (max-width:772px) {
+   .text{
+     margin-left: 0;
+   }
+   .form{
+     width: 50%;
+   }
+   .illustration{
+     width: 60%;
+     margin-right: 0;
+   }
+  }
+  @media  (max-width:614px) {
+   html{
+     font-size: 10px;
+   }
+   .illustration{
+     width: 60%;
+     margin-right: 0;
+   }
+  }
+   @media  screen and (max-width:430px) {
     .main_container{
       flex-direction: column-reverse;
       align-items: center;
+      justify-content: center;
     }
     .body{
     background: url('./mobile-bg.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: 100% 100%;
     }
-    
-    html{
-      font-size: 10px;
+
+    .illustration{
+      height: 70%;
+      width: 80%;
+      margin: 0;
     }
+
     .form{
-      width: 30%;
+      width: 80%;
+      text-align: center;
+      margin:0;
     }
-    .main_container{
-      /* height: 0; */
+    .text{
+      margin-top: 0;
+    }
+  
+    .tags{
+      margin-top: 6rem;
+    }
+  } 
+  @media  (max-width:396px) {
+    html{
+      font-size: 8px;
+    }
+    
+  }
+  @media  (max-width:318px) {
+    html{
+      font-size: 6px;
     }
   }
